@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PTFS</title>
     <style>
-        /* Global Reset */
         * {
             margin: 0;
             padding: 0;
@@ -16,7 +15,7 @@
             font-family: 'Noto Sans JP', sans-serif;
             background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
             color: #333;
-            line-height: 1.8;
+            line-height: 1;
             padding: 20px;
         }
 
@@ -29,21 +28,52 @@
             letter-spacing: 2px;
         }
 
-        p {
+        .content {
             background: rgba(255, 255, 255, 0.8);
             border-radius: 12px;
-            padding: 20px;
+            padding: 2px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             font-size: 1.2rem;
             white-space: pre-wrap; /* Preserve line breaks */
             word-wrap: break-word;
             overflow-wrap: break-word;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: start;
+            position: relative;
         }
 
-        p:hover {
+        .content img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            max-width: 500px;
+            height: auto;
+        }
+
+        .lyrics {
+            color: #333;
+        }
+
+        .lyrics span {
+            display: inline-block;
+            transition: all 0.5s cubic-bezier(0, 1, 0, 5);
+            cursor: pointer;
+        }
+
+        .lyrics span:hover {
+            color: red;
+            transform: scale(1.5);
+        }
+
+        .content:hover {
             background: rgba(255, 255, 255, 1);
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-            transition: all 0.3s ease-in-out;
+            transition: all 0.5s cubic-bezier(0, 1, 0, 5);
         }
 
         @media (max-width: 768px) {
@@ -59,46 +89,24 @@
 </head>
 <body>
     <h1>Shinso wo Sasageyo!</h1>
-    <p>
-        これ以上の地獄はないだろうと信じたかった
-        されど人類最悪の日はいつも唐突に
-        扉を叩く音は絶えず酷く無作法で
-        招かれざる災厄の灯は悪夢のように
-        過ぎし日を裏切る者 奴らは駆逐すべき敵だ
-        あの日どんな顔で瞳で俺達を見つめていた
-        何を捨てれば悪魔をも凌げる？
-        命さえ 魂さえ 決して惜しくなどはない
-        捧げよ！ 捧げよ！ 心臓を捧げよ！
-        全ての犠牲は今、この瞬間のために
-        捧げよ！ 捧げよ！ 心臓を捧げよ！
-        進むべき未来を その手で切り拓け！
-        過ぎし日追い詰める者 奴らは憎悪をすべき敵だ
-        あの日どんな声で言葉で俺たちを騙っていた？
-        何を学べば悪魔をも屠れる
-        技術でも戦術でも
-        全て無駄になどにしない
-        捧げよ！ 捧げよ！ 心臓を捧げよ！
-        全ての努力は今、この瞬間のために
-        捧げよ！ 捧げよ！ 心臓を捧げよ！
-        謳うべき勝利を その手で掴み取れ！
-        得体の知れない化物が人と似た面をしてやがる
-        この世から一匹残らず奴らを駆逐してやる
-        最初に言い出したのは誰か？ そんなこと覚えちゃいないが
-        忘れられない怒りがある 必ず駆逐してやる
-        嗚呼... 選び悔いた道の先はどんな景色に繋がっている？
-        ただ捧げられた人生を糧に咲く 尊き彼岸の勝利
-        約束の地は楽園の果て
-        あの日人類は思い出した
-        奴らに支配されていた恐怖を
-        鳥籠の中に囚われていた屈辱を
-        黄昏を 弓矢は翔ける 翼を背負い
-        その奇跡が自由への道と成る
-        捧げよ！ 捧げよ！ 心臓を捧げよ！
-        全ての苦難は今、この瞬間のために
-        捧げよ！ 捧げよ！ 心臓を捧げよ！
-        儚き命を燃える弓矢に変えて
-        捧げよ！ 捧げよ！ 心臓を捧げよ！
-        起こるべき奇跡をその身で描き出せ！
-    </p>
+    <div class="content">
+        <img src="./assets/Shingeki no Kiseki.jpeg" alt="like a baaka, Eren Yeagar">
+        <div class="lyrics">
+            <p>
+                <span>こ</span><span>れ</span><span>以</span><span>上</span><span>の</span><span>地</span><span>獄</span><span>は</span><span>な</span><span>い</span><span>だ</span><span>ろ</span><span>う</span><span>と</span><span>信</span><span>じ</span><span>た</span><span>か</span><span>っ</span><span>た</span><br>
+                <span>さ</span><span>れ</span><span>ど</span><span>人</span><span>類</span><span>最</span><span>悪</span><span>の</span><span>日</span><span>は</span><span>い</span><span>つ</span><span>も</span><span>唐</span><span>突</span><span>に</span><br>
+                <span>扉</span><span>を</span><span>叩</span><span>く</span><span>音</span><span>は</span><span>絶</span><span>え</span><span>ず</span><span>酷</span><span>く</span><span>無</span><span>作</span><span>法</span><span>で</span><br>
+                <span>招</span><span>か</span><span>れ</span><span>ざ</span><span>る</span><span>災</span><span>厄</span><span>の</span><span>灯</span><span>は</span><span>悪</span><span>夢</span><span>の</span><span>よ</span><span>う</span><span>に</span><br>
+                <span>過</span><span>ぎ</span><span>し</span><span>日</span><span>を</span><span>裏</span><span>切</span><span>る</span><span>者</span> <span>奴</span><span>ら</span><span>は</span><span>駆</span><span>逐</span><span>す</span><span>べ</span><span>き</span><span>敵</span><span>だ</span><br>
+                <span>あ</span><span>の</span><span>日</span><span>ど</span><span>ん</span><span>な</span><span>顔</span><span>で</span><span>瞳</span><span>で</span><span>俺</span><span>達</span><span>を</span><span>見</span><span>つ</span><span>め</span><span>て</span><span>い</span><span>た</span><br>
+                <span>何</span><span>を</span><span>捨</span><span>て</span><span>れ</span><span>ば</span><span>悪</span><span>魔</span><span>を</span><span>も</span><span>凌</span><span>げ</span><span>る</span><span>？</span><br>
+                <span>命</span><span>さ</span><span>え</span> <span>魂</span><span>さ</span><span>え</span> <span>決</span><span>し</span><span>て</span><span>惜</span><span>し</span><span>く</span><span>な</span><span>ど</span><span>は</span><span>な</span><span>い</span><br>
+                <span>捧</span><span>げ</span><span>よ</span>！ <span>捧</span><span>げ</span><span>よ</span>！ <span>心</span><span>臓</span><span>を</span><span>捧</span><span>げ</span><span>よ</span>！<br>
+                <span>全</span><span>て</span><span>の</span><span>犠</span><span>牲</span><span>は</span><span>今</span>、<span>こ</span><span>の</span><span>瞬</span><span>間</span><span>の</span><span>た</span><span>め</span><span>に</span><br>
+                <span>捧</span><span>げ</span><span>よ</span>！ <span>捧</span><span>げ</span><span>よ</span>！ <span>心</span><span>臓</span><span>を</span><span>捧</span><span>げ</span><span>よ</span>！<br>
+                <span>進</span><span>む</span><span>べ</span><span>き</span><span>未</span><span>来</span><span>を</span> <span>そ</span><span>の</span><span>手</span><span>で</span><span>切</span><span>り</span><span>拓</span><span>け</span>！<br>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
