@@ -38,9 +38,9 @@
 
 //Object Example type 3:
 
-// objType5 = new Object();
-// objType5["phone"] = "iPhone";
-// objType5["store"] = "App Store";
-// objType5["game1"] = "Sudoku";
-// objType5["game2"] = "Chess";
-// console.log(objType5);
+// objType3 = new Object();
+// objType3["phone"] = "iPhone";
+// objType3["store"] = "App Store";
+// objType3["game1"] = "Sudoku";
+// objType3["game2"] = "Chess";
+// console.log(objType3);
